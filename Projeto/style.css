@@ -1,4 +1,12 @@
 
+:root {
+  /* Definindo a paleta de cores */
+  --vermelho: #AB1725;
+  --preto: #0F1C2D;
+  --cinza: #A8A8A8;
+  --cinza-claro: #F7F9FA;
+}
+
 /*Início Estilos por TAG HTML */
 /* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
 body {
@@ -10,32 +18,9 @@ body {
   letter-spacing: .2rem;
 }
 
-nav {
-  font-size: 1rem;
-}
-
-nav a:hover {
-  border-bottom: 0.3rem solid rgb(171, 23, 36);
-  /* border-color:  */
-  text-decoration: underline;
-  text-decoration-color: transparent;
-}
-
-nav a:link {
-  color: black;
-}
-
-nav a:visited {
-  color: black;
-}
-
-.radio {
-  padding-top: 1.3rem;
-  padding-bottom: 0.3rem;
-  padding-left: 0.3rem;
-  padding-right: 1.3rem;
-  border-radius: 50%;
-  align-self: flex-end;
+/* Remove bordas dos botos */
+button {
+  border: none;
 }
 
 /*Fim Estilos por TAG HTML */
@@ -45,75 +30,163 @@ nav a:visited {
 /*Início Estilos por ID */
 /* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
 
+/* Barra de navegacao de modelos de carros */
+#navegacao nav a {
+  font-size: 1rem;
+  color: var(--cinza);
+}
+
+/* Remove a cor azul dos links */
+#navegacao nav a:link {
+  color: var(--cinza);
+}
+
+/* Remove a cor dos links visitados */
+#navegacao nav a:visited {
+  color: var(--cinza);
+}
+
+/* Barra de navegação de modelos de carros */
+#navegacao nav a:hover {
+  border-bottom: 0.3rem solid var(--vermelho);
+  /* border-color:  */
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+/* botao Begin -> */
 #iniciar {
   font-size: 1rem;
   cursor: pointer;
 }
 
+/* Nome do Modelo */
 #nameModel {
-  color: rgb(171, 23, 36);
+  color: var(--vermelho);
 }
 
-
-#slide-1 {
+/* Subtitulo do slide inicial do modelo MR */
+#slidesMR #subtitulo {
   margin-top: 4.5rem;
   margin-left: 17rem;
 }
-/* Selecionando a primeira tag <p> */
-#slide-1 p:nth-child(1) {
-  color: rgb(171, 23, 36);
+/* Frase do slide 1 "Build your"*/
+#slidesMR #subtitulo p:nth-child(1) {
+  color: var(--vermelho);
   font-size: 2.3rem;
   margin-bottom: -2rem;
 }
-/* Selecionando a segunda tag <p> */
-#slide-1 p:nth-child(2) {
-font-size: 6.9rem;
-margin-bottom: -5.5rem;
+/* Frase do slide 1 "MODEL MR" */
+#slidesMR #subtitulo p:nth-child(2) {
+  font-size: 6.9rem;
+  margin-bottom: -5.5rem;
 }
-
-#slide-1 img {
-    margin-bottom: -2rem;
+/* Imagem do slide 1 */
+#slidesMR #subtitulo img {
+  margin-bottom: -2rem;
 }
 
 /* Selecionando a primeira tag <p> */
 #footerSlidesMR div p:nth-child(1) {
-  color: rgb(171, 23, 36);
+  color: var(--vermelho);
   font-size: 3rem;
   margin-top: 3rem;
   margin-bottom: -0.5rem;
-
 }
 
 #footerSlidesMR div p:nth-child(2) {
-font-size: 1.3rem;
-border-bottom: 6px solid rgb(171, 23, 36);
+  font-size: 1.3rem;
+  border-bottom: 6px solid var(--vermelho);
 }
 
 #footerSlidesMR div p span {
   font-size: 50%;
 }
 
-/* #slideEng div:nth-child(1) {
-  margin-bottom: -2rem;
-  margin-top: -1rem;
-} */
-
-/* #slideEng div:nth-child(2) {
-  padding-top: 5rem;
-  font-size: 2.5rem;
-} */
-
 #slideEng > div {
   margin-bottom: -2rem;
   margin-top: -1rem;
-
 }
 
-#slideEng div ul li {
-  /* font-size: 2rem; */
-  /* margin-top: 3rem; */
+#listEng {
+  padding-top: 5rem;
+  font-size: 2rem;
+  padding-left: 0rem;
+  padding-right: 2rem;
 }
 
+#slideEng footer div {
+  margin-top: -0.5rem;
+  color: black;
+}
+#slideEng footer div:nth-child(1) span {
+  color: var(--vermelho);
+  font-size: 1.5rem;
+}
+
+#slideEng footer div:nth-child(2) {
+  /* color: blue; */
+}
+#slideEng footer div:nth-child(3) span {
+  color: var(--vermelho);
+}
+
+#slideEng footer div:nth-child(4) {
+  /* cursor: pointer; */
+}
+
+#slideEng footer div:nth-child(5):hover {
+  cursor: pointer;
+}
+
+#slideCor > div > div {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+#slideCor > div > div > img {
+  padding-top: 5rem;
+}
+
+#listCor {
+    font-size: 2rem;
+}
+
+#listCor > p {
+  font-size: 0.6rem;
+}
+
+
+#slideCor footer div {
+  margin-top: -0.5rem;
+  color: black;
+}
+#slideCor footer div:nth-child(1) span {
+  color: var(--vermelho);
+  font-size: 1.5rem;
+}
+
+#slideCor footer div:nth-child(2) {
+  /* color: blue; */
+}
+#slideCor footer div:nth-child(3) span {
+  color: var(--vermelho);
+}
+
+#slideCor footer div:nth-child(4) {
+  /* cursor: pointer; */
+}
+
+#slideCor footer div:nth-child(5):hover {
+  cursor: pointer;
+}
+
+
+
+/* #listEng > ul > li {
+margin-top: 2rem;
+font-size: 1rem;
+} */
 /*Fim Estilos por ID */
 /* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
 
@@ -121,10 +194,54 @@ border-bottom: 6px solid rgb(171, 23, 36);
 
 /*Início Estilos por CLasse */
 /* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
-
-.active > button {
-  background-color: rgb(171, 23, 36);
+/* Botao das listas de opções de Engine */
+.radio {
+  padding-top: 1.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 1.3rem;
+  border-radius: 50%;
+  align-self: flex-end;
 }
 
+/* Lista de Engines */
+.list-group-item {
+  background-color: var(--cinza-claro);
+  border-color: var(--cinza-claro);
+  font-size: 1rem;
+  margin-top: 3rem;
+  color: var(--cinza);
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  vertical-align: middle;
+}
+
+.list-group-item div div:nth-child(1) {
+  font-size: 1.4rem;
+}
+
+/* Engine selecionada */
+.list-group-item.active {
+  background-color: var(--cinza-claro);
+  border-color: var(--cinza-claro);
+  color: var(--preto);
+  /* font-size: 1.2rem; */
+}
+
+.list-group-item.active div div:first-child span {
+  color: var(--vermelho);
+}
+
+/* Botao da Engine Selecionada */
+.list-group-item.active button {
+  background-color: var(--vermelho);
+}
+
+/* Hover na Lista de Engine */
+.list-group-item:hover {
+  cursor: pointer;
+}
 /*Fim Estilos por ID */
 /* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */

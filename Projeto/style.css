@@ -23,13 +23,8 @@ button {
   border: none;
 }
 
-/*Fim Estilos por TAG HTML */
-/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
 
-
-/*Início Estilos por ID */
-/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
-
+/* **********************************BARRA DE NAVEGAÇÃO SUPERIOR********************************** */
 /* Barra de navegacao de modelos de carros */
 #navegacao nav a {
   font-size: 1rem;
@@ -54,6 +49,9 @@ button {
   text-decoration-color: transparent;
 }
 
+
+
+/* **********************************SLIDE INICIAL********************************** */
 /* botao Begin -> */
 #iniciar {
   font-size: 1rem;
@@ -94,15 +92,20 @@ button {
   margin-bottom: -0.5rem;
 }
 
+/* Footer do slide Inicial */
 #footerSlidesMR div p:nth-child(2) {
   font-size: 1.3rem;
   border-bottom: 6px solid var(--vermelho);
 }
 
+/* Footer do slide Inicial */
 #footerSlidesMR div p span {
   font-size: 50%;
 }
 
+
+/* **********************************SLIDE DE SELECAO DO MOTOR**************************** */
+/* Slide de selecao do Motor */
 #slideEng > div {
   margin-bottom: -2rem;
   margin-top: -1rem;
@@ -139,61 +142,7 @@ button {
   cursor: pointer;
 }
 
-#slideCor > div {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-}
 
-#slideCor > div > div > img {
-  padding-top: 5rem;
-}
-
-#listCor {
-  font-size: 2rem;
-}
-
-#listCor > p {
-  font-size: 0.7rem;
-}
-
-
-#slideCor footer div {
-  margin-top: -0.5rem;
-  color: black;
-}
-#slideCor footer div:nth-child(1) span {
-  color: var(--vermelho);
-  font-size: 1.5rem;
-}
-
-#slideCor footer div:nth-child(2) {
-  /* color: blue; */
-}
-#slideCor footer div:nth-child(3) span {
-  color: var(--vermelho);
-}
-
-#slideCor footer div:nth-child(4) {
-  /* cursor: pointer; */
-}
-
-#slideCor footer div:nth-child(5):hover {
-  cursor: pointer;
-}
-
-
-
-/* #listEng > ul > li {
-margin-top: 2rem;
-font-size: 1rem;
-} */
-/*Fim Estilos por ID */
-/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
-
-
-
-/*Início Estilos por CLasse */
-/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
 /* Botao das listas de opções de Engine */
 .radio {
   padding-top: 1.3rem;
@@ -203,6 +152,7 @@ font-size: 1rem;
   border-radius: 50%;
   align-self: flex-end;
 }
+
 
 /* Lista de Engines */
 .list-group-item {
@@ -245,13 +195,48 @@ font-size: 1rem;
 }
 
 
-.botao-cor {
-  border:0.7rem solid var(--cinza-claro);
-  border-radius: 50%;
+/* **********************************SLIDE DE SELECAO DA COR**************************** */
+/* Div principal do slide */
+#slideCor > div {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
-.botao-cor:hover {
+/* Imagem do carro com a cor */
+#slideCor > div > div > img {
+  padding-top: 5rem;
+}
+
+#slideCor footer div {
+  margin-top: -0.5rem;
+  color: black;
+}
+#slideCor footer div:nth-child(1) span {
+  color: var(--vermelho);
+  font-size: 1.5rem;
+}
+
+#slideCor footer div:nth-child(2) {
+  /* color: blue; */
+}
+#slideCor footer div:nth-child(3) span {
+  color: var(--vermelho);
+}
+
+#slideCor footer div:nth-child(4) {
+  /* cursor: pointer; */
+}
+
+#slideCor footer div:nth-child(5):hover {
   cursor: pointer;
+}
+
+#listCor {
+  font-size: 2rem;
+}
+
+#listCor > p {
+  font-size: 0.7rem;
 }
 
 #listCor .active .botao-cor {
@@ -263,5 +248,11 @@ font-size: 1rem;
   color: var(--vermelho);
 }
 
-/*Fim Estilos por ID */
-/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+.botao-cor {
+  border:0.7rem solid var(--cinza-claro);
+  border-radius: 50%;
+}
+
+.botao-cor:hover {
+  cursor: pointer;
+}

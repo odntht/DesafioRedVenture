@@ -239,6 +239,13 @@ button {
   font-size: 0.7rem;
 }
 
+#listCor > div {
+  margin-top: 7rem;
+  margin-bottom: 13rem;
+}
+
+
+
 #listCor .active .botao-cor {
   border:0.7rem solid var(--preto);
   border-radius: 50%;

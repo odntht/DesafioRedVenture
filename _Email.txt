@@ -1,0 +1,70 @@
+Fala Fernando! Tudo bem?
+
+A primeira etapa do processo seletivo é um teste técnico. 
+Enviamos um layout de uma aplicação 
+(separamos um material de apoio pra te ajudar na execução do teste; 
+por favor dê uma olhada no final do e-mail) 
+e a idéia aqui não é limitarmos em tecnologia X ou Y; 
+e sim, você pode ficar livre pra escolher o que quiser. 
+Não esqueça de documentar como instalar e rodar o seu projeto e claro, 
+caso queira explicar o porque tomou certas decisões, fique a vontade.
+
+Gostamos de ressaltar que não existe certo ou errado quando falamos de tecnologia, 
+então fique tranquilo: não estamos aqui para julgar nada! 
+Queremos apenas entender a sua linha de raciocínio e criatividade. 
+O resultado final você pode nos enviar via GitHub/Bitbucket ou se preferir, 
+no final desse e-mail há um link onde você pode fazer o upload do teste. 
+O prazo máximo para entrega é de 10 dias corridos a partir de hoje: August 1, 2019.
+------
+
+Informações sobre o teste
+
+Trata-se de uma aplicação que simula a customização de um carro. São 5 etapas ao todo: 
+
+    capa/página inicial
+    escolha do motor
+    escolha da cor
+    escolha das rodas
+    resumo das escolhas
+
+A cada passo da simulação deve ser possível escolher uma das opções dentre as categorias de escolha (motor, cor e rodas).
+ A cada escolha de uma opção em um passo:
+
+    na barra inferior, que mostra um resumo da simulação,  o valor total do carro deve ser atualizado de acordo com a opção escolhida.
+    ainda na barra inferior, a imagem referente à escolha deve ser mostrada.
+    a imagem maior, do lado esquerdo da tela deve ser atualizada, juntamente com as informações adicionais.
+
+Na tela final a pessoa deve ver uma página com o resumo das escolhas feitas,
+ uma imagem com a cor do carro escolhido e pode ter a opção de reiniciar a simulação.
+
+ 
+
+Todas as informações de cada passo (textos e valores) estão disponíveis em um arquivo JSON que você deve consumir
+ (pode usar algum framework ou vanilla JS para integração).
+
+ 
+
+Requisitos:
+
+    a página deve ser responsiva e seguir o máximo dos designs propostos. 
+    o JSON externo com os dados deve ser consumido via AJAX.
+    gostaríamos ver um código semântico e que siga as Web Standards.
+
+ 
+
+Plus
+
+    atenção à perfomance da página.
+    explicação de arquitetura escolhida (JS e CSS)
+    transições e animações de interface.
+
+ 
+
+Material de apoio:
+
+    Fontes utilizada: Saira Condensed (https://fonts.google.com/specimen/Saira+Condensed)
+    Pasta com arquivos (Layouts, Guia de Experiência em PDF e imagens) (https://drive.google.com/drive/u/1/folders/0Bxw_Z4nlwsXHTVpKZFlMekVUb0U)
+    Há algum tempo temos usado muito mais o Sketch que o Photoshop. 
+	Caso não tenha o Sketch, você usar um desses sites (Photopea | Figma)
+	que são editores online ou se tiver Photoshop/Illustrator é só importar o arquivo PDF.
+    JSON (https://next.json-generator.com/api/json/get/41ORKNZDU)
